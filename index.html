@@ -1,1 +1,149 @@
 
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+* {
+    box-sizing: border-box;
+}
+.row::after {
+    content: "";
+    clear: both;
+    display: block;
+}
+[class*="col-"] {
+    float: left;
+    padding: 15px;
+}
+html {
+    font-family: "Lucida Sans", sans-serif;
+}
+.header {
+    background-color: #97E5CA;
+    color: #ffffff;
+    padding: 15px;
+}
+.menu ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+.menu li {
+    padding: 8px;
+    margin-bottom: 7px;
+    background-color: #97CAE5;
+    color: #ffffff;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+}
+.menu li:hover {
+    background-color: #E4F1F8;
+}
+.aside {
+    background-color: #97CAE5;
+    padding: 15px;
+    color: #ffffff;
+    text-align: center;
+    font-size: 14px;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+}
+/* For desktop: */
+.col-1 {width: 8.33%;}
+.col-2 {width: 16.66%;}
+.col-3 {width: 25%;}
+.col-4 {width: 33.33%;}
+.col-5 {width: 41.66%;}
+.col-6 {width: 50%;}
+.col-7 {width: 58.33%;}
+.col-8 {width: 66.66%;}
+.col-9 {width: 75%;}
+.col-10 {width: 83.33%;}
+.col-11 {width: 91.66%;}
+.col-12 {width: 100%;}
+
+@media only screen and (max-width: 768px) {
+    /* For mobile phones: */
+    [class*="col-"] {
+        width: 100%;
+    }
+
+
+
+</style>
+</head>
+<body>
+
+<div class="header">
+
+<header>
+	<h1>Responsive Media Queries</h1>
+</header>
+</div>
+
+<div class="row">
+
+<div class="col-3 menu">
+  <ul>
+    <li><a href="#">London</a></li>
+    <li><a href="#">Paris</a></li>
+    <li><a href="#">Tokyo</a></li>
+	<li><a href="#">New York</a></li>
+  </ul>
+</div>
+
+<div class="col-6">	
+
+
+  <h2>London</h2>
+  <p>London is the capital city of England.</p>
+  <p>It is the most populous city in the United Kingdom, with a metropolitan area of over 13 million inhabitants.</p>
+	
+
+
+  <h2>Paris</h2>
+  <p>Paris is the capital of France.</p> 
+  <p>The Paris area is one of the largest population centers in Europe, with more than 12 million inhabitants.</p>
+
+
+  <h2>Tokyo</h2>
+  <p>Tokyo is the capital of Japan.</p>
+  <p>It is the center of the Greater Tokyo Area,  and the most populous metropolitan area in the world.</p>
+
+
+  <h2>New York</h2>
+  <p>The City of New York is the most populous city in the United States.</p>
+  <p>New York is an important center for international diplomacy and has been described as the cultural and financial capital of the world.</p>
+
+</div>
+
+<div class="col-3 right">
+	<div class="aside">
+	<h2>About</h2>
+	<p>
+		<li>London</li>
+		<li>Paris</li>
+		<li>Tokyo</li>
+		<li>New York</li>
+	</p>
+	<h2>Major Attractions</h2>
+	<p>
+		<li>London</li>
+		<li>Paris</li>
+		<li>Tokyo</li>
+		<li>New York</li>
+	</p>
+	<h2>Famous Restaurants</h2>
+	<p>
+		<li>London</li>
+		<li>Paris</li>
+		<li>Tokyo</li>
+		<li>New York</li>
+	</p>
+	</div>
+</div>
+	
+
+</div>
+
+</body>
+</html>
